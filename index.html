@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Game-tictactoe</title>
+        <title>Game-TicTacToe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="icon" href="favicon.ico">
@@ -15,25 +15,26 @@
                 <h1>Tic-Tac-Toe </h1>
             </div>
             <div class = "status-action">
-                <div class = "status"> X is Next </div>
-                <div class = "reset"> Reset </div>
+                <div class = "status"> Player 1 : ' X '</br> Player 2 : ' O '  </div>
+                <div class = "restart" > Restart </div>
+                <script src= "src/index.js"></script>
             </div>
             <div class = "game-canvas">
-                <div class = "game-grid">
-                    <div class = "game-cell"></div>
-                    <div class = "game-cell"></div>
-                    <div class = "game-cell"></div>
-                    <div class = "game-cell"></div>
-                    <div class = "game-cell"></div>
-                    <div class = "game-cell"></div>
-                    <div class = "game-cell"></div>
-                    <div class = "game-cell"></div>
-                    <div class = "game-cell"></div>
-                </div>
+                
+                    <div id = "game-cell1" onclick = "fill(this)"></div>
+                    <div id = "game-cell2" onclick = "fill(this)"></div>
+                    <div id = "game-cell3" onclick = "fill(this)"></div>
+                    <div id = "game-cell4" onclick = "fill(this)"></div>
+                    <div id = "game-cell5" onclick = "fill(this)"></div>
+                    <div id = "game-cell6" onclick = "fill(this)"></div>
+                    <div id = "game-cell7" onclick = "fill(this)"></div>
+                    <div id = "game-cell8" onclick = "fill(this)"></div>
+                    <div id = "game-cell9" onclick = "fill(this)"></div>
+                    <script src= "src/index.js"></script>
             </div>
 
-            <script src= "src/index.js"></script>
             
+
         </section>
 
     </body>
