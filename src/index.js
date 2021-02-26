@@ -2,25 +2,8 @@
 
 
 
-// Create one dimensional array 
-//var board = new Array(3); 
-  
-//document.write("Creating 2D array <br>"); 
-  
-// Loop to create 2D array using 1D array 
-//for (var i = 0; i < board.length; i++) { 
-  //  board[i] = new Array(3); 
-//} 
 
-/*let board = [
-    [" ", " ", " "],
-    [" ", " ", " "],
-    [" ", " ", " "],
-    [" ", " ", " "],
- ];*/
-
-
-
+/*-----------------------------------------------------------------------------------------*/
 /*
 count =1;
 function fill(number){  
@@ -64,7 +47,7 @@ let currentPlayer = 'X';
 let display = document.getElementById('status2');
 function fill(number){         
     let board = document.getElementById('game-cell'+number);
-     
+    
     if (board.innerHTML == "") {
         board.innerHTML = currentPlayer;
         checkPlayer();
@@ -81,15 +64,16 @@ function fill(number){
         //count ++; 
     } 
    
-  else{
+    else{
+
         if (tie()){
-            display.innerHTML = "Tie-Game ended";
+            display.innerHTML = "Tie/Game ended";
             reset();
         }
         //window.alert("Tie-Game ended") 
        
         
-    } 
+    }
     
 }
 
@@ -136,8 +120,8 @@ function checkPlayer(){
         }
         
     }
-    
-    
+
+       
 }
 
 function reset(){
@@ -179,17 +163,12 @@ function winner (){
     }
  
     else{
-    return false;
-    //if (tie()){
-        //display.innerHTML = "Tie" 
-        //reset();
-
-
-    }
+        return false;
+        
     }
 
    
-
+}
 
 function tie(){
     for (var i=0; i<9 ; i++){
